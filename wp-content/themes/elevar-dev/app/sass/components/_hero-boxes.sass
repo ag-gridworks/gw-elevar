@@ -1,0 +1,34 @@
+.hero-boxes
+	padding: 30px
+	margin-top: -90px
+	display: flex
+	+breakpoint($tablet)
+		padding: 15px
+		flex-flow: column
+	.box
+		+make(4,12,12)
+		+breakpoint($tablet)
+			margin-bottom: 30px
+		.inner
+			background-color: $red
+			padding: 30px
+			color: #fff
+			text-align: left
+			+shadow-2
+			height: 100%
+			.this-icon
+				margin-bottom: 20px
+				img
+					height: 40px
+			.this-title
+				font-weight: $bold
+				+font-size(21px)
+			.this-text
+				font-weight: $light
+				+font-size(14px)
+		&:nth-child(1)
+			.inner
+				background-color: $blue
+		&:nth-child(2)
+			.inner
+				background-color: $orange
