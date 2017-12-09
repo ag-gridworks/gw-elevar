@@ -10,20 +10,21 @@
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^5.1.1",
+    "gulp-filter": "^5.0.1",
     "gulp-less": "^3.3.2",
     "gulp-main-bower-files": "^1.6.2",
     "gulp-plumber": "^1.1.0",
+    "gulp-ruby-sass": "^2.1.1",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^4.3.11",
-    "gulp-clean-css": "^3.7.0",
-    "gulp-cssimport": "^5.1.1",
-    "gulp-filter": "^5.0.1",
-    "gulp-uglifycss": "^1.0.8"
+    "gulp-uglifycss": "^1.0.8",
+    "gulp-watch": "^4.3.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

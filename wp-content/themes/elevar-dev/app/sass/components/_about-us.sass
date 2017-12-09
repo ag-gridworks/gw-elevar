@@ -1,0 +1,28 @@
+.about-us
+	+clearfix
+	display: flex
+    justify-content: flex-start
+    position: relative 
+	.image
+		+make(5,0,0)
+		padding: 0
+		display: flex
+		+breakpoint($tablet)
+			display: none
+		img
+			align-self: flex-end
+	.inner
+		+make(7,12,12)
+		align-self: center
+		padding: 90px
+		+breakpoint($tablet)
+			padding: 45px
+			text-align: center
+		.this-title
+			+font-size(38px)
+			font-weight: $bold
+		.this-text
+			+font-size(16px)
+			margin-top: 30px
+			text-align: justify
+			line-height: 1.8

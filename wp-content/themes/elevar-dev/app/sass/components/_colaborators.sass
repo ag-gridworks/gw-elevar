@@ -1,0 +1,42 @@
+.go-colaborators
+	background-color: $orange
+	color: #fff
+	padding: 90px
+	text-align: center
+	+clearfix
+	+breakpoint($tablet)
+		padding: 90px 30px
+	>.this-title
+		font-weight: $bold
+		text-align: center
+		margin-bottom: 90px
+		+font-size(28px)
+	.this-item
+		+make(4,12,12)
+		+breakpoint($tablet)
+			margin-bottom: 90px
+		.thumb
+			img
+				border-radius: 50%
+				width: 160px
+				height: 160px
+				border: 1px solid #fff
+				+shadow-2
+		.title
+			margin: 30px 0px
+			+font-size(21px)
+			font-weight: $bold
+		.social
+			border-radius: 3px
+			background-color: $red
+			color: #fff
+			padding: 5px 10px
+			display: inline-block
+			a
+				color: #fff
+				padding: 3px 15px
+				+font-size(20px)
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0

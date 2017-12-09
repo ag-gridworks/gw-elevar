@@ -24,7 +24,8 @@ var css_src = [
     './vendors/font-awesome/css/font-awesome.min.css',
     './vendors/css/style.css',
     './vendors/owl.carousel/dist/assets/owl.carousel.min.css',
-    './vendors/owl.carousel/dist/assets/owl.theme.default.min.css'
+    './vendors/owl.carousel/dist/assets/owl.theme.default.min.css',
+    './vendors/hover/css/hover-min.css'
 ];
 
 gulp.task('pack-css', function () { 

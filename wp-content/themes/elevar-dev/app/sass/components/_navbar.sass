@@ -1,28 +1,69 @@
 .go-navbar
-	margin: 0 2%
-	height: 60px
-	padding-left: 2%
-	display: flex
-	align-items: center
-	.this-logo
-		float: left
-		font-weight: $bold
-		font-size: 20px
-	.this-nav-toggle
-		position: fixed
-		right: 3%
-		top: 10px
-		//background-color: #fff
-		// border-radius: 50%
-		z-index: 9997
-		//+shadow-1
+	position: fixed
+	width: 100%
+	z-index: 10000
+	+breakpoint($tablet)
+		background-color: $dark-blue
+		height: 60px
+	.brand
+		position: absolute
+		top: 15px
+		left: 60px
+		+breakpoint($tablet)
+			left: 15px
+		+breakpoint($mobile)
+			top: 15px
+	.nav-toggle
+		display: none
+		color: #fff
+		position: absolute
+		right: 15px
+		top: 15px
+		+breakpoint($tablet)
+			display: block
+			top: 10px
+	nav
+		+breakpoint($tablet)
+			+center
+		ul.main-ul
+			+clearfix
+			list-style: none
+			padding: 0
+			margin: 0
+			margin-right: 60px
+			//margin-top: 15px
+			//background-color: $dark-blue
+			+breakpoint($tablet)
+				display: none
+				margin: 0
+				width: 100%
+				background-color: #192c38
+				margin-top: 60px
+				+shadow-2
+			li
+				float: right
+				// &:first-child
+				// 	a
+				// 		padding-right: 0
+				+breakpoint($tablet)
+					float: none
+					border-bottom: 1px solid #0a1a23
+				a
+					padding: 20px 30px
+					color: #fff
+					display: block
+					text-align: center
+					text-decoration: none
 
 .hamburger
-	padding: 10px
+	padding: 7px
+	padding-top: 10px
+	background-color: $dark-blue
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
 	width: 30px
 	height: 3px
+	background-color: #FFF
 
 .hamburger-box
 	width: 30px
@@ -32,28 +73,6 @@
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
 			background-color: #fff
 
-.overlay-navigation
-	display: none
-	height: 100%
-	width: 100%
-	position: fixed
-	top: 0
-	left: 0
-	+gradient(-45deg, rgba(20, 63, 204, 0.88), $color-2)
-	z-index: 1000
-	nav
-		height: 100%
-		ul
-			list-style-type: none
-			display: flex
-			flex-direction: column;
-			height: 100%
-			padding: 0
-			justify-content: center
-			align-items: center
-			li
-				margin: 7px 0px
-				a
-					color: #fff
-					+font-size(30px)
-					font-weight: $bold
+.navbar-style
+	background-color: $dark-blue
+	+shadow-2

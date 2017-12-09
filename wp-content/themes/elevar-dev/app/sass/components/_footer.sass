@@ -1,0 +1,59 @@
+footer
+	color: #fff
+	display: flex
+	flex-wrap: wrap
+	+breakpoint($mobile)
+		flex-direction: column-reverse
+	.left-box
+		+make(6,6,12)
+		background-color: $blue
+		text-align: left
+		padding: 60px
+		height: 500px
+		+center
+		align-items: initial
+		flex-direction: column
+		justify-content: space-between
+		+breakpoint($tablet)
+			text-align: center
+		.info > *
+			margin-bottom: 30px
+		.copyright
+			width: 100%
+			+font-size(16px)
+			font-weight: $bold
+	.right-box
+		+make(6,6,12)
+		background-color: $dark-blue
+		text-align: center
+		+center
+		flex-direction: column
+		padding: 60px 120px
+		+breakpoint($tablet)
+			padding: 60px
+		.input
+			width: 100%
+			span
+				background-color: $red
+				color: #fff
+				position: absolute
+				height: 40px
+				padding: 10px 30px
+				i
+					font-size: 20px
+		>.title
+			+font-size(28px)
+			font-weight: $bold
+			margin-bottom: 30px
+		>.text
+			+font-size(16px)
+			font-weight: $light
+			margin-bottom: 30px
+		>.social
+			color: $blue
+			a
+				padding-right: 30px
+				&:last-child
+					padding-right: 0
+				i
+					+font-size(24px)

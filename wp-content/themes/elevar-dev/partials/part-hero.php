@@ -16,7 +16,7 @@
 			</h2>
 
 			<div class="this-options">
-				<a href="#projetos" class="go-button navbar-option">
+				<a href="#howto" class="go-button navbar-option">
 					<?php the_field('hero_button_text') ?>
 				</a>
 			</div>
@@ -26,11 +26,14 @@
 
 </section>
 
+<div id="startchange">
+
 <section class="hero-boxes">
+	<?php $delay = 0 ?>
 	
 	<?php while(have_rows('hero_boxes')): the_row(); ?>
 
-	<div class="box">
+	<div class="box wow bounceInUp" data-wow-delay="0.<?php echo "$delay" ?>s">
 		<div class="inner">
 			<div class="this-icon">
 				<img src="<?php the_sub_field('box_icon') ?>" alt="">
@@ -47,6 +50,8 @@
 			</div>
 		</div>
 	</div>
+
+	<?php $delay = $delay + 2 ?>
 	
 	<?php endwhile ?>
 

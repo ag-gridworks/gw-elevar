@@ -35,9 +35,16 @@ if (function_exists('add_theme_support')) {
 /*------------------------------------*\
     Functions
 \*------------------------------------*/
+function my_acf_init() {
+    
+    acf_update_setting('google_api_key', 'AIzaSyBPerC-RWCyahK6UKVXXzXKX9yw9kGmRf8');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 add_action('init', 'my_remove_editor_from_post_type');
 function my_remove_editor_from_post_type() {
-    remove_post_type_support( 'page', 'editor' );
+    remove_post_type_support( 'home', 'editor' );
 }
 
 function gw_login() {
@@ -55,7 +62,7 @@ function gw_nav() {
         'theme_location'  => 'header-menu',
         'menu'            => '',
         'container'       => 'nav',
-        'container_class' => 'menu-{menu slug}-container',
+        'container_class' => 'menu-container',
         'container_id'    => '',
         'menu_class'      => '',
         'menu_id'         => '',
@@ -65,7 +72,7 @@ function gw_nav() {
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul>%3$s</ul>',
+        'items_wrap'      => '<ul class="main-ul">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
         )

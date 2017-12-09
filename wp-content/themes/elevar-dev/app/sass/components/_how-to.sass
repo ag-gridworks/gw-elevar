@@ -1,0 +1,44 @@
+.how-to
+	background-color: $dark-blue
+	min-height: 100vh
+	padding: 90px
+	color: #fff
+	text-align: center
+	+breakpoint($tablet)
+		padding: 90px 30px
+	.this-title
+		font-weight: $bold
+	.this-subtitle
+		+font-size(18px)
+	.this-steps
+		margin-top: 30px
+		padding: 0px 90px
+		+breakpoint($tablet)
+			padding: 0
+		>.this-title
+			font-weight: $bold
+			+font-size(21px)
+			padding: 30px 0px
+		.step
+			+clearfix
+			margin-bottom: 30px
+			.index
+				+font-size(70px)
+				font-weight: $black
+				float: left
+				margin-right: 40px
+				+breakpoint($mobile)
+					float: none
+					margin-right: 0
+					background-color: $blue
+					border-radius: 50%
+					width: 90px
+					height: 95px
+					margin: 0 auto
+			.text
+				text-align: justify
+				padding-top: 20px
+				+font-size(16px)
+				font-weight: $light
+				+breakpoint($mobile)
+					text-align: center
